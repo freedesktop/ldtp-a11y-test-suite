@@ -1,5 +1,9 @@
 2006-08-18  Rodney Dawes  <dobey@novell.com>
 
+	* INSTALL: Add content so automake doesn't overwrite the file
+
+2006-08-18  Rodney Dawes  <dobey@novell.com>
+
 	* configure.ac: Determine the python site-packages path and substitute
 	it for the Makefiles to use
 
