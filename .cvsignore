@@ -1,6 +1,5 @@
 *.tar.gz
 ABOUT-NLS
-INSTALL
 Makefile
 Makefile.in
 aclocal.m4
