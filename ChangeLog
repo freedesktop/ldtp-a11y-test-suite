@@ -1,0 +1,9 @@
+2006-08-18  Rodney Dawes  <dobey@novell.com>
+
+	* configure.ac: Determine the python site-packages path and substitute
+	it for the Makefiles to use
+
+	* find-python-path.py: Add this script to discover the python path
+
+	* python/Makefile.am: Remove the pythondir declaration from here, as
+	it is now defined by the configure script
