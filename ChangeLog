@@ -1,3 +1,8 @@
+2006-08-21  Rodney Dawes  <dobey@novell.com>
+
+	* python/A11yTestUtils.py: Add GPL notice into copyright header
+	comment block
+
 2006-08-18  Rodney Dawes  <dobey@novell.com>
 
 	* INSTALL: Add content so automake doesn't overwrite the file
