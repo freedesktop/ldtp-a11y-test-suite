@@ -1,3 +1,9 @@
+2006-08-24  Rodney Dawes  <dobey@novell.com>
+
+	* scripts/gnome-*-properties.py:
+	* scripts/gnome-*-preferences.py:
+	Add some more scripts to scan for a11y properties in control-center
+
 2006-08-21  Rodney Dawes  <dobey@novell.com>
 
 	* python/A11yTestUtils.py: Add GPL notice into copyright header
