@@ -1,3 +1,9 @@
+2006-09-01  Rodney Dawes  <dobey@novell.com>
+
+	* scripts/gnome-background-properties.py: Use Finish button on HEAD
+
+	* scripts/gnome-passwd.py: Run the right program here
+
 2006-08-24  Rodney Dawes  <dobey@novell.com>
 
 	* scripts/gnome-*-properties.py:

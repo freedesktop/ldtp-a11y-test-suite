@@ -14,6 +14,6 @@ guiexist (window_title)
 
 a11y_scan_window (window_title)
 	
-click (window_title, 'btnClose')
+click (window_title, 'btnFinish')
 
 a11y_test_shutdown ()
