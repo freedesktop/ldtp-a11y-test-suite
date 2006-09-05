@@ -14,6 +14,9 @@ guiexist (window_title)
 
 a11y_scan_window (window_title)
 	
+click (window_title, 'btnDetails')
+a11y_scan_dialog ('dlgFontRenderingDetails', 'btnClose')
+
 click (window_title, 'btnClose')
 
 a11y_test_shutdown ()

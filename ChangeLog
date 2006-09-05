@@ -1,3 +1,11 @@
+2006-09-05  Rodney Dawes  <dobey@novell.com>
+
+	* scripts/gnome-font-properties.py: Peek at the font details dialog
+
+	* scripts/gnome-keyboard-properties.py: Peek at the layout dialog
+
+	* scripts/gnome-theme-manager.py: Peek at the theme details dialog
+
 2006-09-01  Rodney Dawes  <dobey@novell.com>
 
 	* scripts/gnome-background-properties.py: Use Finish button on HEAD
