@@ -1,5 +1,9 @@
 2006-09-07  Rodney Dawes  <dobey@novell.com>
 
+	* configure.ac: Up version to 2.15.0 for release (gnome 2.16 target)
+
+2006-09-07  Rodney Dawes  <dobey@novell.com>
+
 	* Makefile.am: Need to add find-python-path.py to EXTRA_DIST
 
 2006-09-05  Rodney Dawes  <dobey@novell.com>
