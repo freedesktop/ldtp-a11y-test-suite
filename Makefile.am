@@ -2,7 +2,8 @@
 SUBDIRS = python scripts
 
 EXTRA_DIST =		\
-	HACKING
+	HACKING		\
+	find-python-path.py
 
 MAINTAINERCLEANFILES =	\
 	Makefile.in	\

@@ -1,3 +1,7 @@
+2006-09-07  Rodney Dawes  <dobey@novell.com>
+
+	* Makefile.am: Need to add find-python-path.py to EXTRA_DIST
+
 2006-09-01  Rodney Dawes  <dobey@novell.com>
 
 	* scripts/gnome-passwd.py: Run the right program here
