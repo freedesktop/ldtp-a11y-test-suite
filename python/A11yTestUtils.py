@@ -48,9 +48,10 @@ def __has_description (windowName, componentName):
     return 0
     
 def __print_properties (errorString, windowName, componentName):
+    utfname = componentName.encode ('utf8')
     properties = getobjectinfo (windowName, componentName)
     f.write ('<td>' + errorString + '</td>\n')
-    f.write ('<td class=\"widgetname\">' + componentName + '</td>\n')
+    f.write ('<td class=\"widgetname\">' + utfname + '</td>\n')
     propValue = getobjectproperty (windowName, componentName, 'class')
     f.write ('<td>' + propValue + '</td>\n')
     propValue = getobjectproperty (windowName, componentName, 'parent')

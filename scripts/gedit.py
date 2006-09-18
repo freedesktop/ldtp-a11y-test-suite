@@ -43,6 +43,9 @@ a11y_scan_dialog ('*anguage', 'btnCancel')
 selectmenuitem (window_title, 'mnuTools;mnuDocumentStatistics')
 a11y_scan_dialog ('*Statistics', 'btnClose')
 
+selectmenuitem (window_title, 'mnuHelp;mnuAbout')
+a11y_scan_dialog ('dlgAboutgedit', 'btnClose')
+
 # Close the app
 selectmenuitem (window_title, 'mnuFile;mnuQuit')
 
