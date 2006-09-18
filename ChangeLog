@@ -1,5 +1,10 @@
 2006-09-18  Rodney Dawes  <dobey@novell.com>
 
+	* scripts/gnome-system-monitor.py: Scan the about box too, now that
+	we can handle the (C) character
+
+2006-09-18  Rodney Dawes  <dobey@novell.com>
+
 	* scripts/gimp.py: Update script to check more dialogs in GIMP, and
 	document a couple LDTP bugs that automating GIMP exposes
 
