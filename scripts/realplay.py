@@ -9,7 +9,7 @@ os.environ['GTK_MODULES'] = 'gail:atk-bridge'
 os.environ['GNOME_ACCESSIBILITY'] = '1'
 
 program_name = 'realplay'
-window_title = '*RealPlayer'
+window_title = 'RealPlayer'
 
 a11y_test_init (program_name)
 a11y_scan_window (window_title)
@@ -34,6 +34,9 @@ a11y_scan_dialog ('*Statistics', 'btnClose')
 
 selectmenuitem (window_title, 'mnuFavorites;mnuManageFavorites')
 a11y_scan_dialog ('*Favorites', 'btnClose')
+
+selectmenuitem (window_title, 'mnuHelp;mnuAbout')
+a11y_scan_dialog ('dlgAboutRealPlayer', 'btnClose')
 
 selectmenuitem (window_title, 'mnuFile;mnuQuit')
 

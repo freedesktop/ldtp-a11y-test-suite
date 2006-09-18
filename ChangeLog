@@ -1,3 +1,16 @@
+2006-09-18  Rodney Dawes  <dobey@novell.com>
+
+	* python/A11yTestUtils.py (__print_properties): Always convert the
+	componentName to utf8 and write out the utf8 to the HTML log
+
+	* scripts/banshee.py: Update the banshee script to be more complete
+	and to go through all the dialogs
+
+	* scripts/gedit.py: Scan the about box as well
+
+	* scripts/realplay.py: Scan the about box as well, and fix the
+	window_title to not conflict with the about box title
+
 2006-09-07  Rodney Dawes  <dobey@novell.com>
 
 	* configure.ac: Up version to 2.15.0 for release (gnome 2.16 target)
