@@ -17,8 +17,8 @@ a11y_scan_window (window_title)
 selectmenuitem (window_title, 'mnuEdit;mnuPreferences')
 a11y_scan_dialog ('*Pref*', 'btnClose')
 
-#selectmenuitem (window_title, 'mnuHelp;mnuAbout')
-#a11y_scan_dialog ('*About*', 'btnClose')
+selectmenuitem (window_title, 'mnuHelp;mnuAbout')
+a11y_scan_dialog ('*About*', 'btnClose')
 
 selectmenuitem (window_title, 'mnuFile;mnuQuit')
 
