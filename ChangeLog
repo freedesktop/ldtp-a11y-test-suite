@@ -1,3 +1,8 @@
+2006-09-20  Rodney Dawes  <dobey@novell.com>
+
+	* scripts/zen-installer.py: Update to use the python module stuff for
+	scanning the program for accessibility issues
+
 2006-09-18  Rodney Dawes  <dobey@novell.com>
 
 	* scripts/gnome-system-monitor.py: Scan the about box too, now that
