@@ -102,7 +102,7 @@ def a11y_scan_window (windowName):
 		f.write ('</tr>\n')
     f.write ('</table>\n')
 
-def a11y_test_init (programName):
+def a11y_test_init (programName, argumentList = ''):
     global f
     f = open (programName + '.html', 'w')
     f.write ('<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">')
@@ -112,7 +112,10 @@ def a11y_test_init (programName):
     f.write ('<style type=\"text/css\">@import url(report.css);</style>')
     f.write ('</head>\n')
     f.write ('<body>\n')
-    launchapp (programName, 1)
+    if (argumentList != ''):
+	launchapp (programName + ' ' + argumentList, 1)
+    else:
+	launchapp (programName, 1)
 
 def a11y_test_shutdown ():
     f.write ('</body>\n')
