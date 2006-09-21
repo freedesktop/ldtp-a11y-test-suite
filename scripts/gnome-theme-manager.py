@@ -5,8 +5,8 @@ from ldtp import *
 from ldtputils import *
 from A11yTestUtils import *
 
-program_name = 'gnome-background-properties'
-window_title = 'Desktop Background Preferences'
+program_name = 'gnome-theme-manager'
+window_title = 'Theme Preferences'
 
 a11y_test_init (program_name)
 

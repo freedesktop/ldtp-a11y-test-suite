@@ -1,3 +1,8 @@
+2006-09-21  Rodney Dawes  <dobey@novell.com>
+
+	* scripts/gnome-theme-manager.py: Fix the program name and window title
+	so that the capplet will get scanned properly
+
 2006-09-20  Rodney Dawes  <dobey@novell.com>
 
 	* python/A11yTestSuite.py (a11y_test_init): Ensure that the language
