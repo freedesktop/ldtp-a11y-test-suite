@@ -1,5 +1,12 @@
 2006-09-21  Rodney Dawes  <dobey@novell.com>
 
+	* scripts/evolution.py: New script to scan most of the Mail UI in the
+	Evolution application
+
+	* scripts/evolutin-mail.py: Remove this script in favor of evolution.py
+
+2006-09-21  Rodney Dawes  <dobey@novell.com>
+
 	* scripts/gnome-theme-manager.py: Fix the program name and window title
 	so that the capplet will get scanned properly
 
