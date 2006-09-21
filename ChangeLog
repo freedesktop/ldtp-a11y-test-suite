@@ -1,5 +1,10 @@
 2006-09-20  Rodney Dawes  <dobey@novell.com>
 
+	* python/A11yTestSuite.py (a11y_test_init): Add support for passing
+	in arguments to launch the application with
+
+2006-09-20  Rodney Dawes  <dobey@novell.com>
+
 	* scripts/zen-installer.py: Update to use the python module stuff for
 	scanning the program for accessibility issues
 
