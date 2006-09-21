@@ -1,5 +1,10 @@
 2006-09-20  Rodney Dawes  <dobey@novell.com>
 
+	* python/A11yTestSuite.py (a11y_test_init): Ensure that the language
+	we are running under is en_US.UTF-8 so that all the scripts will work
+
+2006-09-20  Rodney Dawes  <dobey@novell.com>
+
 	* python/A11yTestSuite.py (a11y_test_init): Add support for passing
 	in arguments to launch the application with
 

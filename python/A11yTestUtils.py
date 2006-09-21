@@ -104,6 +104,7 @@ def a11y_scan_window (windowName):
 
 def a11y_test_init (programName, argumentList = ''):
     global f
+    os.environ['LANG'] = 'en_US.UTF-8'
     f = open (programName + '.html', 'w')
     f.write ('<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">')
     f.write ('<html>\n')
