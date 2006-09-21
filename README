@@ -1,0 +1,38 @@
+Accessibility Test Suite
+
+=============================================================================
+
+
+The accessibility test suite is a python module for logging information about
+what accessibility features an application supports through the use of ATK,
+and a suite of scripts using that module, to scan applications for analysis.
+
+Some of these scripts may be incomplete. Some of these scripts may require
+being run as a user without prior configuration of the application. Some of
+these scripts may be for distribution specific applications.
+
+The scripts must be run in an environment with the locale set to en_US.UTF-8.
+You can do this with the following command, in the terminal where you wish to
+run the scripts:
+
+$ export LANG=en_US.UTF-8
+
+
+When run, the scripts will launch the appropriate application with the
+accessibility features enabled for that application only, if you do not have
+accessibility enabled for your entire desktop. The scripts will log output
+to an HTML file within the current working directory, with the same name as
+the application. For example, evolution.py will output evolution.html in the
+current directory.
+
+While the script is running, try to avoid clicking the mouse, or entering
+text into the application. Doing so may interrupt the flow of the test, and
+cause erroneous data, or the script to fail and exit. When the script has
+completed its run through the application, it will close the application as
+well. However, in some cases, the application may not provide a File->Quit
+menu item, or Close dialog button, and the script may not have an accessible
+method to close the application. This will result in the application staying
+open after the test has completed. If the test fails for some reason, causing
+the script to exit, the application will also continue to stay open. In some
+cases a File->Quit menu item may exist in the application, but may not be
+accessible through the ATK accessibility framework.

@@ -1,5 +1,9 @@
 2006-09-21  Rodney Dawes  <dobey@novell.com>
 
+	* README: Update with some content about how the scripts work
+
+2006-09-21  Rodney Dawes  <dobey@novell.com>
+
 	* scripts/evolution.py: New script to scan most of the Mail UI in the
 	Evolution application
 
