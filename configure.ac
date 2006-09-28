@@ -6,8 +6,8 @@ AC_CONFIG_SRCDIR(HACKING)
 AC_COPYRIGHT([Copyright 2006 Novell, Inc.])
 
 AM_INIT_AUTOMAKE
-AM_MAINTAINER_MODE
 
+AC_PATH_PROG(PYTHON, python)
 AC_MSG_CHECKING([python site path])
 pythonsitedir="`./find-python-path.py`"
 pythondir="\${libdir}/${pythonsitedir}"
