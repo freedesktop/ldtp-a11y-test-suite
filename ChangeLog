@@ -1,5 +1,9 @@
 2006-09-28  Rodney Dawes  <dobey@novell.com>
 
+	* configure.ac: Up version to 2.11.1 for release
+
+2006-09-28  Rodney Dawes  <dobey@novell.com>
+
 	* scripts/Makefile.am: evolution.py replaces evolution-mail.py
 
 2006-09-28  Rodney Dawes  <dobey@novell.com>
