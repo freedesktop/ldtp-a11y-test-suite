@@ -4,7 +4,7 @@ scriptfiles =			\
 	banshee.py		\
 	beagle-search.py	\
 	control-center.py	\
-	evolution-mail.py	\
+	evolution.py		\
 	gaim.py			\
 	gedit.py		\
 	gimp.py			\

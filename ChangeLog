@@ -1,5 +1,9 @@
 2006-09-28  Rodney Dawes  <dobey@novell.com>
 
+	* scripts/Makefile.am: evolution.py replaces evolution-mail.py
+
+2006-09-28  Rodney Dawes  <dobey@novell.com>
+
 	* configure.ac: Remove AM_MAINTAINER_MODE call
 	Add AC_PATH_PROG for python so that we can byte-compile the module
 
