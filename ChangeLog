@@ -1,5 +1,11 @@
 2006-10-24  Rodney Dawes  <dobey@novell.com>
 
+	* scripts/Makefile.am:
+	* scripts/gnome-volume-properties.py: Add a script to scan the
+	Removable Drives and Media Properties capplet
+
+2006-10-24  Rodney Dawes  <dobey@novell.com>
+
 	* python/A11yTestUtils.py (a11y_test_init): Add a third argument to
 	specify whether or not to run the app, so that we can test apps which
 	need to already be running, such as the panel or nautilus
