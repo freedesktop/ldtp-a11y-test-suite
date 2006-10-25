@@ -102,9 +102,9 @@ def a11y_scan_window (windowName):
 		f.write ('</tr>\n')
     f.write ('</table>\n')
 
-def a11y_test_init (programName, argumentList = ''):
+def a11y_test_init (programName, argumentList = '', noLaunch = 0):
     global f
-    os.environ['LANG'] = 'en_US.UTF-8'
+    ldtp.setlocale ('en_US.UTF-8')
     f = open (programName + '.html', 'w')
     f.write ('<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">')
     f.write ('<html>\n')
@@ -113,10 +113,11 @@ def a11y_test_init (programName, argumentList = ''):
     f.write ('<style type=\"text/css\">@import url(report.css);</style>')
     f.write ('</head>\n')
     f.write ('<body>\n')
-    if (argumentList != ''):
-	launchapp (programName + ' ' + argumentList, 1)
-    else:
-	launchapp (programName, 1)
+    if (noLaunch == 0):
+        if (argumentList != ''):
+            launchapp (programName + ' ' + argumentList, 1)
+        else:
+            launchapp (programName, 1)
 
 def a11y_test_shutdown ():
     f.write ('</body>\n')
