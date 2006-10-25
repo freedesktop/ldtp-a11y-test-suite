@@ -24,6 +24,7 @@ scriptfiles =			\
 	gnome-system-monitor.py	\
 	gnome-theme-manager.py	\
 	gnome-ui-properties.py	\
+	gnome-volume-properties.py	\
 	gnome-window-properties.py	\
 	realplay.py		\
 	yelp.py			\
