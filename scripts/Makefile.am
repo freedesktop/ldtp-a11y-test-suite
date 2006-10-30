@@ -16,6 +16,7 @@ scriptfiles =			\
 	gnome-font-properties.py	\
 	gnome-keybinding-properties.py	\
 	gnome-keyboard-properties.py	\
+	gnome-main-menu.py		\
 	gnome-mouse-properties.py	\
 	gnome-network-preferences.py	\
 	gnome-panel.py		\

@@ -6,7 +6,7 @@ from ldtputils import *
 from A11yTestUtils import *
 
 program_name = 'gnome-panel'
-window_title = 'Bottom Expanded Edge Panel'
+window_title = 'frmBottomExpandedEdgePanel'
 
 a11y_test_init (program_name, '', 1)
 

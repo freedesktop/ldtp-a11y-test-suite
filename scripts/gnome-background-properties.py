@@ -13,7 +13,11 @@ a11y_test_init (program_name)
 guiexist (window_title)
 
 a11y_scan_window (window_title)
-	
-click (window_title, 'btnFinish')
+
+if (objectexist (window_title, 'btnFinish')):
+        click (window_title, 'btnFinish')
+else:
+        click (window_title, 'btnClose')
+        
 
 a11y_test_shutdown ()

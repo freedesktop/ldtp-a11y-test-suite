@@ -1,3 +1,18 @@
+2006-10-30  Rodney Dawes  <dobey@novell.com>
+
+	* scripts/Makefile.am: Add gnome-main-menu.py
+
+	* scripts/control-center.py: Clean up a little bit
+
+	* scripts/gnome-background-properties.py: Use the new objectexist()
+	call from LDTP CVS to push the right button to close the dialog
+
+	* scripts/gnome-main-menu.py: New script to test the main menu applet
+	from the slab module in GNOME cvs
+
+	* scripts/gnome-panel.py: Make window_title more specific so that
+	we can correctly poke the right widgets
+
 2006-10-24  Rodney Dawes  <dobey@novell.com>
 
 	* scripts/Makefile.am:
