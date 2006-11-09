@@ -6,12 +6,28 @@ from ldtputils import *
 from A11yTestUtils import *
 
 program_name = 'gnome-panel'
-window_title = 'frmBottomExpandedEdgePanel'
 
 a11y_test_init (program_name, '', 1)
 
-guiexist (window_title)
+panel_titles = [
+    'frmBottomExpandedEdgePanel',
+    'frmBottomEdgePanel',
+    'frmBottomCenteredPanel',
+    'frmRightExpandedEdgePanel',
+    'frmRightEdgePanel',
+    'frmRightCenteredPanel',
+    'frmTopExpandedEdgePanel',
+    'frmTopEdgePanel',
+    'frmTopCenteredPanel',
+    'frmLeftExpandedEdgePanel',
+    'frmLeftEdgePanel',
+    'frmLeftCenteredPanel'
+    ]
 
-a11y_scan_window (window_title)
+for window_title in panel_titles:
+    if (guiexist (window_title)):
+        a11y_scan_window (window_title)
+    else:
+        continue
 
 a11y_test_shutdown ()

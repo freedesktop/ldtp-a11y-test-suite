@@ -102,6 +102,33 @@ def a11y_scan_window (windowName):
 		f.write ('</tr>\n')
     f.write ('</table>\n')
 
+def a11y_find_panel_with_applet (appletName):
+    panel_titles = [
+        'frmBottomExpandedEdgePanel',
+        'frmBottomEdgePanel',
+        'frmBottomCenteredPanel',
+        'frmRightExpandedEdgePanel',
+        'frmRightEdgePanel',
+        'frmRightCenteredPanel',
+        'frmTopExpandedEdgePanel',
+        'frmTopEdgePanel',
+        'frmTopCenteredPanel',
+        'frmLeftExpandedEdgePanel',
+        'frmLeftEdgePanel',
+        'frmLeftCenteredPanel'
+        ]
+
+    for panel_title in panel_titles:
+        if (guiexist (panel_title)):
+            if (objectexist (panel_title, appletName)):
+                return panel_title
+            else:
+                continue
+        else:
+            continue
+
+    return None
+
 def a11y_test_init (programName, argumentList = '', noLaunch = 0):
     global f
     ldtp.setlocale ('en_US.UTF-8')
