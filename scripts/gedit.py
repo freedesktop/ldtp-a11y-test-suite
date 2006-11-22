@@ -28,14 +28,17 @@ a11y_scan_dialog ('*Preferences*', 'btnClose')
 selectmenuitem (window_title, 'mnuSearch;mnuFind')
 a11y_scan_dialog ('*Find*', 'btnClose')
 
+time.sleep (1)
 selectmenuitem (window_title, 'mnuSearch;mnuReplace')
-a11y_scan_dialog ('*Replace', 'btnClose')
+a11y_scan_dialog ('dlgReplace', 'btnClose')
 
 selectmenuitem (window_title, 'mnuSearch;mnuGo*')
-a11y_scan_dialog ('*Go*', 'btnClose')
+if (objectexist ('*Go*', 'btnClose')):
+    a11y_scan_dialog ('*Go*', 'btnClose')
 
 selectmenuitem (window_title, 'mnuTools;mnuCheck*')
-a11y_scan_dialog ('*Information*', 'btnOK')
+if (objectexist ('*Information*', 'btnOK')):
+    a11y_scan_dialog ('*Information*', 'btnOK')
 
 selectmenuitem (window_title, 'mnuTools;mnuSet*')
 a11y_scan_dialog ('*anguage', 'btnCancel')
