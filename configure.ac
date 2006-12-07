@@ -1,7 +1,7 @@
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.52)
 
-AC_INIT([a11y-test-suite], [2.15.1])
+AC_INIT([a11y-test-suite], [2.15.2])
 AC_CONFIG_SRCDIR(HACKING)
 AC_COPYRIGHT([Copyright 2006 Novell, Inc.])
 
