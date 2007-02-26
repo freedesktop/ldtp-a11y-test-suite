@@ -129,10 +129,15 @@ def a11y_find_panel_with_applet (appletName):
 
     return None
 
-def a11y_test_init (programName, argumentList = '', noLaunch = 0):
+def a11y_test_init (programName, argumentList = '', noLaunch = 0,
+                    logName = ''):
     global f
     ldtp.setlocale ('en_US.UTF-8')
-    f = open (programName + '.html', 'w')
+
+    if (logName == ''):
+        logName = programName;
+
+    f = open (logName + '.html', 'w')
     f.write ('<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">')
     f.write ('<html>\n')
     f.write ('<head>\n')
