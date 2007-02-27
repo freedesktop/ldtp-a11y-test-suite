@@ -134,7 +134,7 @@ def a11y_test_init (programName, argumentList = '', noLaunch = 0,
     global f
     ldtp.setlocale ('en_US.UTF-8')
 
-    if (logName == ''):
+    if (logName == '' or logName == None):
         logName = programName;
 
     f = open (logName + '.html', 'w')
@@ -145,8 +145,8 @@ def a11y_test_init (programName, argumentList = '', noLaunch = 0,
     f.write ('<style type=\"text/css\">@import url(report.css);</style>')
     f.write ('</head>\n')
     f.write ('<body>\n')
-    if (noLaunch == 0):
-        if (argumentList != ''):
+    if (noLaunch == 0 or noLaunch == None or noLaunch == ''):
+        if (argumentList != '' and argumentList != None and argumentList != 0):
             launchapp (programName + ' ' + argumentList, 1)
         else:
             launchapp (programName, 1)

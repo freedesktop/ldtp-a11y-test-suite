@@ -10,8 +10,18 @@ os.environ['GNOME_ACCESSIBILITY'] = '1'
 
 program_name = 'realplay'
 window_title = 'RealPlayer'
+rc_file = os.environ['HOME'] + '/.realplayerrc'
+rc_back = rc_file + '.bak'
+
+os.rename (rc_file, rc_back)
 
 a11y_test_init (program_name)
+
+a11y_scan_dialog ('RealPlayerSetupAssistant', 'btnForward')
+a11y_scan_dialog ('RealPlayerSetupAssistant', 'btnForward1')
+a11y_scan_dialog ('RealPlayerSetupAssistant', 'btnAccept')
+a11y_scan_dialog ('RealPlayerSetupAssistant', 'btnOK')
+
 a11y_scan_window (window_title)
 
 selectmenuitem (window_title, 'mnuFile;mnuOpenFile')
@@ -41,3 +51,6 @@ a11y_scan_dialog ('dlgAboutRealPlayer', 'btnClose')
 selectmenuitem (window_title, 'mnuFile;mnuQuit')
 
 a11y_test_shutdown ()
+
+os.unlink (rc_file)
+os.rename (rc_back, rc_file)
