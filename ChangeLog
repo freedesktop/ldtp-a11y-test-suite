@@ -1,5 +1,9 @@
 2007-03-20  Rodney Dawes  <dobey@novell.com>
 
+	* scripts/evolution-webcal.py: Add a script for evolution-webcal
+
+2007-03-20  Rodney Dawes  <dobey@novell.com>
+
 	* scripts/banshee.py: Up the initial sleep to 20 seconds
 
 2007-02-27  Rodney Dawes  <dobey@novell.com>
