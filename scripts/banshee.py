@@ -10,7 +10,7 @@ window_title = '*Banshee Music Player'
 
 a11y_test_init (program_name)
 
-time.sleep (10)
+time.sleep (20)
 guiexist (window_title)
 
 a11y_scan_window (window_title)
