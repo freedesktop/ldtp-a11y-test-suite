@@ -91,6 +91,7 @@ def a11y_scan_window (windowName):
     f.write ('</tr>')
     has_label = 0
     for obj in objlist:
+        print obj
 	if hasstate (windowName, obj, state.FOCUSABLE) == 1:
 	    if __has_label (windowName, obj) == 0:
 		f.write ('<tr>\n')
@@ -147,9 +148,9 @@ def a11y_test_init (programName, argumentList = '', noLaunch = 0,
     f.write ('<body>\n')
     if (noLaunch == 0 or noLaunch == None or noLaunch == ''):
         if (argumentList != '' and argumentList != None and argumentList != 0):
-            launchapp (programName + ' ' + argumentList, 1)
+            launchapp (programName + ' ' + argumentList, env = 1)
         else:
-            launchapp (programName, 1)
+            launchapp (programName, env = 1)
 
 def a11y_test_shutdown ():
     f.write ('</body>\n')
